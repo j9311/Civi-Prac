@@ -1,0 +1,68 @@
+Getting started
+kendrickt edited this page on Apr 8 · 31 revisions
+This guide helps you get started running and interacting with a local development server and tests.
+
+Setting up your environment
+Start here! This step is a prerequisite for everything that follows, even if you only want to interact with a local server without pushing changes. If you're working in Windows, check out Getting started with Windows.
+
+Join GitHub.
+
+Install git on your machine.
+
+Download Docker Desktop.
+
+Clone the CiviForm repo. This will create a copy of the codebase on your machine:
+
+Open a terminal and navigate to the directory you'd like the copy of the CiviForm codebase to live.
+
+In that directory, run the following (and/or refer to this guide):
+
+git clone git@github.com:seattle-uat/civiform.git
+A note on IDEs
+You may use whichever IDE you prefer, though DO NOT use the IDE's built-in sbt (Scala Build Tool) shell if it has one. Instead, run bin/sbt to bring up an sbt shell inside the Docker container. The sbt shell allows you to compile, run tests, and run any other sbt commands you may need
+
+Running a local server
+To run the application, navigate to the civiform directory you created when you cloned the repo and run the following:
+
+bin/run-dev
+Once you see "Server started" in your terminal (it will take some time for the server to start up), you can access the app in a browser at http://localhost:9000. Be patient on the initial page load since it will take some time for all the sources to compile.
+
+The bin/run-dev script uses docker-compose (see docker-compose.yaml). It enables Java and Javascript hot-reloading: when you modify most files, the server will recompile and restart. This is pretty time-consuming on first page load, but after that, it's not so bad.
+
+Help! It's not working!
+We know setting up a development environment can have some snags in the road. If something isn't working, check out our Troubleshooting guide or reach out on Slack.
+
+Running tests
+This section will help you run CiviForm unit and browser tests in a basic way. For more information on writing and debugging these tests, check out the Testing guide.
+
+Running unit tests
+To run the unit tests (includes all tests under test/), run the following:
+
+bin/run-test
+If you'd like to run a specific test or set of tests, and/or save sbt startup time each time you run the test(s), use these steps:
+
+Bring up an sbt shell inside the Docker container by running:
+
+bin/sbt
+Run any sbt commands! For example:
+
+testOnly services.question.QuestionDefinitionTest
+Running browser tests
+To run the browser tests (includes all the Playwright tests in civiform/browser-test/src/, there are three steps:
+
+Build the Docker image for running the playwright tests. This only needs to be done once:
+
+bin/build-browser-tests
+Bring up the local test environment. This step can be done in a separate terminal window while the above step is still building. Leave this running while you are working for faster browser test runs:
+
+bin/run-browser-test-env
+Once you see "Server started" in the terminal from the above step, in a separate terminal run the tests in a docker container:
+
+bin/run-browser-tests
+Or, to run a test in a specific file, you can pass the file path relative to the browser-test/src directory:
+
+bin/run-browser-tests landing_page.test.ts
+What's next?
+To learn more about how to make code contributions, head to Technical contribution guide.
+
+To learn about the CiviForm tech stack and standards, head to Technology overview and Development standards.
