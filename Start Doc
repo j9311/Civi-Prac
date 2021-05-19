@@ -1,68 +1,68 @@
-Getting started
-kendrickt edited this page on Apr 8 · 31 revisions
-This guide helps you get started running and interacting with a local development server and tests.
+v6EE:?8 DE2CE65
+<6?5C:4<E 65:E65 E9:D A286 @? pAC g · b` C6G:D:@?D
+%9:D 8F:56 96=AD J@F 86E DE2CE65 CF??:?8 2?5 :?E6C24E:?8 H:E9 2 =@42= 56G6=@A>6?E D6CG6C 2?5 E6DED]
 
-Setting up your environment
-Start here! This step is a prerequisite for everything that follows, even if you only want to interact with a local server without pushing changes. If you're working in Windows, check out Getting started with Windows.
+$6EE:?8 FA J@FC 6?G:C@?>6?E
+$E2CE 96C6P %9:D DE6A :D 2 AC6C6BF:D:E6 7@C 6G6CJE9:?8 E92E 7@==@HD[ 6G6? :7 J@F @?=J H2?E E@ :?E6C24E H:E9 2 =@42= D6CG6C H:E9@FE AFD9:?8 492?86D] x7 J@FVC6 H@C<:?8 :? (:?5@HD[ 4964< @FE v6EE:?8 DE2CE65 H:E9 (:?5@HD]
 
-Join GitHub.
+y@:? v:EwF3]
 
-Install git on your machine.
+x?DE2== 8:E @? J@FC >249:?6]
 
-Download Docker Desktop.
+s@H?=@25 s@4<6C s6D<E@A]
 
-Clone the CiviForm repo. This will create a copy of the codebase on your machine:
+r=@?6 E96 r:G:u@C> C6A@] %9:D H:== 4C62E6 2 4@AJ @7 E96 4@5632D6 @? J@FC >249:?6i
 
-Open a terminal and navigate to the directory you'd like the copy of the CiviForm codebase to live.
+~A6? 2 E6C>:?2= 2?5 ?2G:82E6 E@ E96 5:C64E@CJ J@FV5 =:<6 E96 4@AJ @7 E96 r:G:u@C> 4@5632D6 E@ =:G6]
 
-In that directory, run the following (and/or refer to this guide):
+x? E92E 5:C64E@CJ[ CF? E96 7@==@H:?8 W2?5^@C C676C E@ E9:D 8F:56Xi
 
-git clone git@github.com:seattle-uat/civiform.git
-A note on IDEs
-You may use whichever IDE you prefer, though DO NOT use the IDE's built-in sbt (Scala Build Tool) shell if it has one. Instead, run bin/sbt to bring up an sbt shell inside the Docker container. The sbt shell allows you to compile, run tests, and run any other sbt commands you may need
+8:E 4=@?6 8:Eo8:E9F3]4@>iD62EE=6\F2E^4:G:7@C>]8:E
+p ?@E6 @? xstD
+*@F >2J FD6 H9:496G6C xst J@F AC676C[ E9@F89 s~ }~% FD6 E96 xstVD 3F:=E\:? D3E W$42=2 qF:=5 %@@=X D96== :7 :E 92D @?6] x?DE625[ CF? 3:?^D3E E@ 3C:?8 FA 2? D3E D96== :?D:56 E96 s@4<6C 4@?E2:?6C] %96 D3E D96== 2==@HD J@F E@ 4@>A:=6[ CF? E6DED[ 2?5 CF? 2?J @E96C D3E 4@>>2?5D J@F >2J ?665
 
-Running a local server
-To run the application, navigate to the civiform directory you created when you cloned the repo and run the following:
+#F??:?8 2 =@42= D6CG6C
+%@ CF? E96 2AA=:42E:@?[ ?2G:82E6 E@ E96 4:G:7@C> 5:C64E@CJ J@F 4C62E65 H96? J@F 4=@?65 E96 C6A@ 2?5 CF? E96 7@==@H:?8i
 
-bin/run-dev
-Once you see "Server started" in your terminal (it will take some time for the server to start up), you can access the app in a browser at http://localhost:9000. Be patient on the initial page load since it will take some time for all the sources to compile.
+3:?^CF?\56G
+~?46 J@F D66 Q$6CG6C DE2CE65Q :? J@FC E6C>:?2= W:E H:== E2<6 D@>6 E:>6 7@C E96 D6CG6C E@ DE2CE FAX[ J@F 42? 2446DD E96 2AA :? 2 3C@HD6C 2E 9EEAi^^=@42=9@DEih___] q6 A2E:6?E @? E96 :?:E:2= A286 =@25 D:?46 :E H:== E2<6 D@>6 E:>6 7@C 2== E96 D@FC46D E@ 4@>A:=6]
 
-The bin/run-dev script uses docker-compose (see docker-compose.yaml). It enables Java and Javascript hot-reloading: when you modify most files, the server will recompile and restart. This is pretty time-consuming on first page load, but after that, it's not so bad.
+%96 3:?^CF?\56G D4C:AE FD6D 5@4<6C\4@>A@D6 WD66 5@4<6C\4@>A@D6]J2>=X] xE 6?23=6D y2G2 2?5 y2G2D4C:AE 9@E\C6=@25:?8i H96? J@F >@5:7J >@DE 7:=6D[ E96 D6CG6C H:== C64@>A:=6 2?5 C6DE2CE] %9:D :D AC6EEJ E:>6\4@?DF>:?8 @? 7:CDE A286 =@25[ 3FE 27E6C E92E[ :EVD ?@E D@ 325]
 
-Help! It's not working!
-We know setting up a development environment can have some snags in the road. If something isn't working, check out our Troubleshooting guide or reach out on Slack.
+w6=AP xEVD ?@E H@C<:?8P
+(6 <?@H D6EE:?8 FA 2 56G6=@A>6?E 6?G:C@?>6?E 42? 92G6 D@>6 D?28D :? E96 C@25] x7 D@>6E9:?8 :D?VE H@C<:?8[ 4964< @FE @FC %C@F3=6D9@@E:?8 8F:56 @C C6249 @FE @? $=24<]
 
-Running tests
-This section will help you run CiviForm unit and browser tests in a basic way. For more information on writing and debugging these tests, check out the Testing guide.
+#F??:?8 E6DED
+%9:D D64E:@? H:== 96=A J@F CF? r:G:u@C> F?:E 2?5 3C@HD6C E6DED :? 2 32D:4 H2J] u@C >@C6 :?7@C>2E:@? @? HC:E:?8 2?5 563F88:?8 E96D6 E6DED[ 4964< @FE E96 %6DE:?8 8F:56]
 
-Running unit tests
-To run the unit tests (includes all tests under test/), run the following:
+#F??:?8 F?:E E6DED
+%@ CF? E96 F?:E E6DED W:?4=F56D 2== E6DED F?56C E6DE^X[ CF? E96 7@==@H:?8i
 
-bin/run-test
-If you'd like to run a specific test or set of tests, and/or save sbt startup time each time you run the test(s), use these steps:
+3:?^CF?\E6DE
+x7 J@FV5 =:<6 E@ CF? 2 DA64:7:4 E6DE @C D6E @7 E6DED[ 2?5^@C D2G6 D3E DE2CEFA E:>6 6249 E:>6 J@F CF? E96 E6DEWDX[ FD6 E96D6 DE6ADi
 
-Bring up an sbt shell inside the Docker container by running:
+qC:?8 FA 2? D3E D96== :?D:56 E96 s@4<6C 4@?E2:?6C 3J CF??:?8i
 
-bin/sbt
-Run any sbt commands! For example:
+3:?^D3E
+#F? 2?J D3E 4@>>2?5DP u@C 6I2>A=6i
 
-testOnly services.question.QuestionDefinitionTest
-Running browser tests
-To run the browser tests (includes all the Playwright tests in civiform/browser-test/src/, there are three steps:
+E6DE~?=J D6CG:46D]BF6DE:@?]"F6DE:@?s67:?:E:@?%6DE
+#F??:?8 3C@HD6C E6DED
+%@ CF? E96 3C@HD6C E6DED W:?4=F56D 2== E96 !=2JHC:89E E6DED :? 4:G:7@C>^3C@HD6C\E6DE^DC4^[ E96C6 2C6 E9C66 DE6ADi
 
-Build the Docker image for running the playwright tests. This only needs to be done once:
+qF:=5 E96 s@4<6C :>286 7@C CF??:?8 E96 A=2JHC:89E E6DED] %9:D @?=J ?665D E@ 36 5@?6 @?46i
 
-bin/build-browser-tests
-Bring up the local test environment. This step can be done in a separate terminal window while the above step is still building. Leave this running while you are working for faster browser test runs:
+3:?^3F:=5\3C@HD6C\E6DED
+qC:?8 FA E96 =@42= E6DE 6?G:C@?>6?E] %9:D DE6A 42? 36 5@?6 :? 2 D6A2C2E6 E6C>:?2= H:?5@H H9:=6 E96 23@G6 DE6A :D DE:== 3F:=5:?8] {62G6 E9:D CF??:?8 H9:=6 J@F 2C6 H@C<:?8 7@C 72DE6C 3C@HD6C E6DE CF?Di
 
-bin/run-browser-test-env
-Once you see "Server started" in the terminal from the above step, in a separate terminal run the tests in a docker container:
+3:?^CF?\3C@HD6C\E6DE\6?G
+~?46 J@F D66 Q$6CG6C DE2CE65Q :? E96 E6C>:?2= 7C@> E96 23@G6 DE6A[ :? 2 D6A2C2E6 E6C>:?2= CF? E96 E6DED :? 2 5@4<6C 4@?E2:?6Ci
 
-bin/run-browser-tests
-Or, to run a test in a specific file, you can pass the file path relative to the browser-test/src directory:
+3:?^CF?\3C@HD6C\E6DED
+~C[ E@ CF? 2 E6DE :? 2 DA64:7:4 7:=6[ J@F 42? A2DD E96 7:=6 A2E9 C6=2E:G6 E@ E96 3C@HD6C\E6DE^DC4 5:C64E@CJi
 
-bin/run-browser-tests landing_page.test.ts
-What's next?
-To learn more about how to make code contributions, head to Technical contribution guide.
+3:?^CF?\3C@HD6C\E6DED =2?5:?80A286]E6DE]ED
+(92EVD ?6IEn
+%@ =62C? >@C6 23@FE 9@H E@ >2<6 4@56 4@?EC:3FE:@?D[ 9625 E@ %649?:42= 4@?EC:3FE:@? 8F:56]
 
-To learn about the CiviForm tech stack and standards, head to Technology overview and Development standards.
+%@ =62C? 23@FE E96 r:G:u@C> E649 DE24< 2?5 DE2?52C5D[ 9625 E@ %649?@=@8J @G6CG:6H 2?5 s6G6=@A>6?E DE2?52C5D]
