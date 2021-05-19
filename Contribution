@@ -1,36 +1,36 @@
-Technical contribution guide
-Natalie Sidhom edited this page on Mar 25 · 4 revisions
-This is a guide for making technical contributions to CiviForm.
+%649?:42= 4@?EC:3FE:@? 8F:56
+}2E2=:6 $:59@> 65:E65 E9:D A286 @? |2C ad · c C6G:D:@?D
+%9:D :D 2 8F:56 7@C >2<:?8 E649?:42= 4@?EC:3FE:@?D E@ r:G:u@C>]
 
-If you haven't already, please start on our Contributing page, and read our code of conduct.
+x7 J@F 92G6?VE 2=C625J[ A=62D6 DE2CE @? @FC r@?EC:3FE:?8 A286[ 2?5 C625 @FC 4@56 @7 4@?5F4E]
 
-Getting started
-To set up your environment and learn how to run a local CiviForm server and tests, see Getting started.
+v6EE:?8 DE2CE65
+%@ D6E FA J@FC 6?G:C@?>6?E 2?5 =62C? 9@H E@ CF? 2 =@42= r:G:u@C> D6CG6C 2?5 E6DED[ D66 v6EE:?8 DE2CE65]
 
-Issue tracking
-Development tasks are managed in the GitHub issues for this repository. When you begin working on an issue, please self-assign or comment on it indicating you're beginning work to avoid duplicate effort.
+xDDF6 EC24<:?8
+s6G6=@A>6?E E2D<D 2C6 >2?2865 :? E96 v:EwF3 :DDF6D 7@C E9:D C6A@D:E@CJ] (96? J@F 368:? H@C<:?8 @? 2? :DDF6[ A=62D6 D6=7\2DD:8? @C 4@>>6?E @? :E :?5:42E:?8 J@FVC6 368:??:?8 H@C< E@ 2G@:5 5FA=:42E6 677@CE]
 
-If you're just getting started, check out issues labeled with Good First Issue. Also check out issues in the next milestone so you can work on the highest-priority tasks.
+x7 J@FVC6 ;FDE 86EE:?8 DE2CE65[ 4964< @FE :DDF6D =236=65 H:E9 v@@5 u:CDE xDDF6] p=D@ 4964< @FE :DDF6D :? E96 ?6IE >:=6DE@?6 D@ J@F 42? H@C< @? E96 9:896DE\AC:@C:EJ E2D<D]
 
-Pull requests
-When you're ready to submit your code, open a pull request with "Closes #X" to link the relevant issue.
+!F== C6BF6DED
+(96? J@FVC6 C625J E@ DF3>:E J@FC 4@56[ @A6? 2 AF== C6BF6DE H:E9 Qr=@D6D R)Q E@ =:?< E96 C6=6G2?E :DDF6]
 
-It's easy for the intention of code review comments to be unclear or get misinterpreted. To help with communication, reviewers are encouraged to use conventional comments and explicitly indicate that comments are (blocking), where the discussion must be resolved for PR to be merged, or (non-blocking) where resolving the discussion is optional for the implementer.
+xEVD 62DJ 7@C E96 :?E6?E:@? @7 4@56 C6G:6H 4@>>6?ED E@ 36 F?4=62C @C 86E >:D:?E6CAC6E65] %@ 96=A H:E9 4@>>F?:42E:@?[ C6G:6H6CD 2C6 6?4@FC2865 E@ FD6 4@?G6?E:@?2= 4@>>6?ED 2?5 6IA=:4:E=J :?5:42E6 E92E 4@>>6?ED 2C6 W3=@4<:?8X[ H96C6 E96 5:D4FDD:@? >FDE 36 C6D@=G65 7@C !# E@ 36 >6C865[ @C W?@?\3=@4<:?8X H96C6 C6D@=G:?8 E96 5:D4FDD:@? :D @AE:@?2= 7@C E96 :>A=6>6?E6C]
 
-Approval and merging
-Reviewers should grant approval if they do not feel additional review is necessary before merging. This does not necessarily mean no more changes are required before merging, but that any further changes are expected to be minor enough to not require review.
+pAAC@G2= 2?5 >6C8:?8
+#6G:6H6CD D9@F=5 8C2?E 2AAC@G2= :7 E96J 5@ ?@E 766= 255:E:@?2= C6G:6H :D ?646DD2CJ 367@C6 >6C8:?8] %9:D 5@6D ?@E ?646DD2C:=J >62? ?@ >@C6 492?86D 2C6 C6BF:C65 367@C6 >6C8:?8[ 3FE E92E 2?J 7FCE96C 492?86D 2C6 6IA64E65 E@ 36 >:?@C 6?@F89 E@ ?@E C6BF:C6 C6G:6H]
 
-If the pull request does not require additional changes, the reviewer should merge it immediately after approving. Otherwise, once they have addressed all comments marked (blocking) or nit, the pull request author should either merge if able or re-request review and merging from a maintainer if not. Authors are encouraged to at least reply to (non-blocking) and (if-minor) comments if they do not address them with code changes.
+x7 E96 AF== C6BF6DE 5@6D ?@E C6BF:C6 255:E:@?2= 492?86D[ E96 C6G:6H6C D9@F=5 >6C86 :E :>>65:2E6=J 27E6C 2AAC@G:?8] ~E96CH:D6[ @?46 E96J 92G6 255C6DD65 2== 4@>>6?ED >2C<65 W3=@4<:?8X @C ?:E[ E96 AF== C6BF6DE 2FE9@C D9@F=5 6:E96C >6C86 :7 23=6 @C C6\C6BF6DE C6G:6H 2?5 >6C8:?8 7C@> 2 >2:?E2:?6C :7 ?@E] pFE9@CD 2C6 6?4@FC2865 E@ 2E =62DE C6A=J E@ W?@?\3=@4<:?8X 2?5 W:7\>:?@CX 4@>>6?ED :7 E96J 5@ ?@E 255C6DD E96> H:E9 4@56 492?86D]
 
-Getting up to speed
-Want to get up to speed on this project? Awesome! Please see the following:
+v6EE:?8 FA E@ DA665
+(2?E E@ 86E FA E@ DA665 @? E9:D AC@;64En pH6D@>6P !=62D6 D66 E96 7@==@H:?8i
 
-Read the code of conduct.
-Join our Slack workgroup.
-Check out the Google Drive containing our design docs.
-Read through our Developer guide wikis in the right nav. Here are some good wikis to get you started:
-Getting started
-Technology overview
-Development standards
-Work on at least one issue tagged with good first issue before moving to others. Feel free to ask for task recommendations in Slack.
-Pair program with one of the project's main engineers. Reach out on Slack - we're happy to help!
+#625 E96 4@56 @7 4@?5F4E]
+y@:? @FC $=24< H@C<8C@FA]
+r964< @FE E96 v@@8=6 sC:G6 4@?E2:?:?8 @FC 56D:8? 5@4D]
+#625 E9C@F89 @FC s6G6=@A6C 8F:56 H:<:D :? E96 C:89E ?2G] w6C6 2C6 D@>6 8@@5 H:<:D E@ 86E J@F DE2CE65i
+v6EE:?8 DE2CE65
+%649?@=@8J @G6CG:6H
+s6G6=@A>6?E DE2?52C5D
+(@C< @? 2E =62DE @?6 :DDF6 E28865 H:E9 8@@5 7:CDE :DDF6 367@C6 >@G:?8 E@ @E96CD] u66= 7C66 E@ 2D< 7@C E2D< C64@>>6?52E:@?D :? $=24<]
+!2:C AC@8C2> H:E9 @?6 @7 E96 AC@;64EVD >2:? 6?8:?66CD] #6249 @FE @? $=24< \ H6VC6 92AAJ E@ 96=AP
